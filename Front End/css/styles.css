@@ -1,0 +1,231 @@
+body {
+    background-color: #FFFFE0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.cabecalho__titulo {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.cabecalho__titulo, .cabecalho__opcao {
+    color: #FFFFE0;
+}
+
+.cabecalho__titulo:hover, .cabecalho__titulo:focus {
+    color: #FFFFE0;
+}
+
+.cabecalho__opcao:hover, .cabecalho__opcao:focus {
+    color: #FFA500;
+}
+
+.categoria__titulo {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row {
+    margin: 0px;
+}
+
+.pagina {
+    border-radius: 15px;
+    background-color: #FFA500;
+    color: black;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+}
+
+table > th {
+    justify-content: center ;
+}
+
+.pagina__titulo {
+    font-weight: bold;
+    margin-left: 2.5%;
+}
+
+.preco {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.rodape {
+    background-color: #404038;
+}
+
+.contato {
+    color: #FFFFE0;
+}
+
+.contato__icone-whatsapp {
+    display: inline;
+}
+
+.contato__numero {
+    display: inline;
+}
+
+
+
+/* Estilos para telas PEQUENAS (xs a md no Bootstrap) */
+@media only screen and (max-width: 991px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        background-color: #8B0000;
+        padding: 20px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 150%;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .cabecalho__titulo {
+            font-size: 93.75%;
+        }
+    }
+
+    .navbar-toggler {
+        width: 47px;
+        height: 34px;
+    }
+    
+    .navbar-toggler .line {
+        width: 100%;
+        float: left;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #FFFFE0;
+        margin-bottom: 5px;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .nav-link {
+        padding: 2px 0;
+    }
+
+    .categoria__titulo {
+        margin: 30px 20px 15px 20px;
+    }
+
+    #categoria__titulo-1 {
+        margin-top: 104px;
+    }
+
+    .pagina {
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .pagina__titulo {
+        font-size: 125%;
+    }
+
+    .rodape {
+        margin-top: 50px;
+    }
+
+    .contato {
+        padding: 50px 20px;
+    }
+
+    .contato__titulo {
+        font-size: 150%;
+        margin-bottom: 20px;
+    }
+
+    .contato__icone-whatsapp {
+        width: 30px;
+    }
+
+}
+
+
+
+/* Estilos para telas GRANDES (lg ou maior no Bootstrap) */
+@media only screen and (min-width: 992px) {
+    
+    body {
+        font-size: 22px;
+    }
+
+    .cabecalho {
+        background-color: #8B0000;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    
+    .cabecalho__titulo {
+        font-size: 200%;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .cabecalho__item {
+        display: inline-block;
+    }
+
+    .cabecalho__opcao {
+        font-size: 110%;
+        background-color: #FFA500;
+        border-radius: 10px;
+        padding: 3px 10px;
+        margin: 10px 10px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .cabecalho__opcao:hover, .cabecalho__opcao:focus {
+        color: black;
+        background-color: #FFFFE0;
+        text-decoration: none;
+    }
+
+    .categoria__titulo {
+        font-size: 200%;
+        margin: 50px auto 30px auto;
+    }
+    
+    .pagina {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .rodape {
+        margin-top: 100px;
+    }
+
+    .contato {
+        padding: 100px 50px;
+    }
+
+    .contato__titulo {
+        font-size: 150%;
+        margin-bottom: 20px;
+    }
+
+    .contato__icone-whatsapp {
+        width: 30px;
+    }
+}
