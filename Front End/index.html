@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Lanchonete da Biblioteca - IMT</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho visível somente para telas com width < 992px (de xs a md) -->
+    <div class="container-fluid d-block d-lg-none">
+        <header class="cabecalho">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="cabecalho__titulo" href="#">Lanchonete da Biblioteca - IMT</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line" style="margin-bottom: 0;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar" data-toggle="collapse" data-target=".navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link d-inline-block cabecalho__opcao" href="#">Pratos</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link d-inline-block cabecalho__opcao" href="#lanches">Lanches, Salgados e
+                                    Porções</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link d-inline-block cabecalho__opcao" href="#bebidas">Bebidas</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link d-inline-block cabecalho__opcao" href="#sobremesas">Sobremesas</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link d-inline-block cabecalho__opcao" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Cabeçalho visível somente para telas com width >= 992px (lg ou maior) -->
+    <div class="container-fluid d-none d-lg-block">
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">Lanchonete da Biblioteca - IMT</h1>
+            <a class="cabecalho__opcao" href="#pratos">Cardápio</a>
+            <a class="cabecalho__opcao" href="#contato">Contato</a>
+        </header>
+    </div>
+
+    <!-- Conteúdo (visível com qualquer tamanho de tela) -->
+    <section class="categoria" id="pratos">
+        <div class="container-fluid">
+            <h2 class="categoria__titulo" id="categoria__titulo-1">Pratos</h2>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Pratos com dois acompanhamentos</h3>
+                        <table>
+                            <tr>
+                                <td>Nuggets (6 unidades)</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Omelete (presunto, queijo, tomate)</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Calabresa</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Filé de Frango</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Contra Filé</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Parmegiana de Frango</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Parmegiana de Carne</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Strogonoff de Frango</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Strogonoff de Carne</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Peixe à Dorê</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Filé Mignon</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Vegetariano: escolha 3 acompanhamentos</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Acompanhamentos</h3>
+                        <table>
+                            <tr>
+                                <td>Arroz (integral ou branco)</td>
+                            </tr>
+                            <tr>
+                                <td>Arroz à grega</td>
+                            </tr>
+                            <tr>
+                                <td>Arroz e feijão</td>
+                            </tr>
+                            <tr>
+                                <td>Creme de milho</td>
+                            </tr>
+                            <tr>
+                                <td>Batata frita</td>
+                            </tr>
+                            <tr>
+                                <td>Mandioca frita</td>
+                            </tr>
+                            <tr>
+                                <td>Polenta frita</td>
+                            </tr>
+                            <tr>
+                                <td>Purê de batata</td>
+                            </tr>
+                            <tr>
+                                <td>Purê de mandioquinha</td>
+                            </tr>
+                            <tr>
+                                <td>Legumes no vapor</td>
+                            </tr>
+                            <tr>
+                                <td>Salada de folhas</td>
+                            </tr>
+                            <tr>
+                                <td>Salada de maionese</td>
+                            </tr>
+                            <tr>
+                                <td>Salada (tomate e qjo. bco. temp.)</td>
+                            </tr>
+                            <tr>
+                                <td>Salada de couve</td>
+                            </tr>
+                            <tr>
+                                <td>Salada de berinjela</td>
+                            </tr>
+                            <tr>
+                                <td>Abobrinha refogada</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Massas</h3>
+                        <table>
+                            <tr>
+                                <td>Nhoque ou Talharim</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rondelli 4 queijos / pres. qjo.</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Conchiglione 4 queijos / pres. qjo.</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Molho: sugo caseiro</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="lanches" class="espaco_para_id"></span>
+
+    <section class="categoria">
+        <div class="container-fluid">
+            <h2 class="categoria__titulo">Lanches, Salgados e Porções</h2>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Lanches</h3>
+                        <table>
+                            <tr>
+                                <td>Natural</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Queijo Branco</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Light</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Frango Light</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Queijo Quente</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Misto</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bauru</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Americano</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>Hambúrguer</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>X-Bacon Salada</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>X-Burguer</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                            <tr>
+                                <td>X-Calabresa</td>
+                                <td class="preco">R$ 0,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Salgados</h3>
+                        <table>
+                            <tr>
+                                <td>Salgado</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Pão de queijo</td>
+                                <td class="preco">R$ 7,00</td>
+                            </tr>
+                            <tr>
+                                <td>Pão na chapa</td>
+                                <td class="preco">R$ 6,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Porções</h3>
+                        <table>
+                            <tr>
+                                <td>Fritas, mandioca ou polenta</td>
+                                <td class="preco">R$ 18,00</td>
+                            </tr>
+                            <tr>
+                                <td>Nuggets - 4 unidades</td>
+                                <td class="preco">R$ 10,00</td>
+                            </tr>
+                            <tr>
+                                <td>Nuggets - 6 unidades</td>
+                                <td class="preco">R$ 14,00</td>
+                            </tr>
+                            <tr>
+                                <td>Nuggets - 10 unidades</td>
+                                <td class="preco">R$ 20,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="bebidas" class="espaco_para_id"></span>
+
+    <section class="categoria">
+        <div class="container-fluid">
+            <h2 class="categoria__titulo">Bebidas</h2>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <h3 class="pagina__titulo">Bebidas</h3>
+                        <table>
+                            <tr>
+                                <td>Água mineral</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Água de coco 330ml</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Café expresso</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Café/leite (média)</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Feel Good Sabores</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate Quente</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Red Bull</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Gatorade</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Vitamina</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>H2OH</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Ice Tea</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bebidas Pilão</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Refrigerantes</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Sufresh</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Limonada</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Suco fruta laranja/melancia</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Suco polpa c/ água</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Suco polpa c/ leite</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Toddynho</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Yogurte c/ leite</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Yogurte c/ polpa e leite</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <span id="sobremesas" class="espaco_para_id"></span>
+
+    <section class="categoria">
+        <div class="container-fluid">
+            <h2 class="categoria__titulo">Sobremesas</h2>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="pagina">
+                        <table>
+                            <tr>
+                                <th class="pagina__titulo">Sobremesas</th>
+                            </tr>
+                            <tr>
+                                <td>Sorvetes</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Palha Itália</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Brigadeiro</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bolos</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                            <tr>
+                                <td>Salada de frutas</td>
+                                <td class="preco">R$ 8,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <div class="contato__whatsapp">
+                <img class="contato__icone" src="images/phone_icon.png" alt="Ícone de Telefone">
+                <a href="tel:+551142393436" class="contato__numero">11 4239-3436</a>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
