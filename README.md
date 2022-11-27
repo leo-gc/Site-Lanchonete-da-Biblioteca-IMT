@@ -3,3 +3,6 @@ Este repositório contém os arquivos utilizados em nosso Projeto Integrador Int
 
 Atualização 26/11/2022:
 Ferramenta VLibras de acessibilidade adicionada ao HTML.
+
+Atualização 27/11/2022:
+Número de contato da página atualizado.
