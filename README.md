@@ -6,3 +6,6 @@ Ferramenta VLibras de acessibilidade adicionada ao HTML.
 
 Atualização 27/11/2022:
 Número de contato da página atualizado.
+
+Atualização 29/11/2022:
+Alguns itens e preços foram atualizados.
